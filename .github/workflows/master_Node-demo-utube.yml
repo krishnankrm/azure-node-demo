@@ -19,7 +19,7 @@ jobs:
     - name: Set up Node.js version
       uses: actions/setup-node@v1
       with:
-        node-version: '12.x'
+        node-version: '14.x'
 
     - name: npm install, build, and test
       run: |
@@ -52,5 +52,5 @@ jobs:
       with:
         app-name: 'Node-demo-utube'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_2387625331744bf59651000b81a5acb6 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_88987de53e4641c6bef934fa4ed67c0b }}
         package: .
